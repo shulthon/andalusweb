@@ -19,3 +19,17 @@ Route::get('/', function () {
         "tes"=>"OK bos"
     ]);
 });
+
+Route::get('/our-service', function () {
+    return view('service',[
+        "name"=>"Andalus",
+        "tes"=>"OK bos"
+    ]);
+});
+
+Route::get('/our-product', function () {
+    return view('product',[
+        "name"=>"Andalus",
+        "tes"=>"OK bos"
+    ]);
+});

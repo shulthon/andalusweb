@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <title>Andalus | PT. Andalus Teknologi Indonesia</title>
+    <title>Our Product - Andalus</title>
     <style>
 
       .row{
@@ -16,6 +16,13 @@
         /* margin-left:calc(-.5* var(--bs-gutter-x)); */
         margin-right:0 !important;
         margin-left:0 !important;
+      }
+
+      .background-prim{
+        background-color:#1C9BAB;
+      }
+      .background-prim:hover{
+        background-color:#115861;
       }
     .masthead {
   background-color: #d9d9d9;
@@ -119,6 +126,50 @@
   height:790;
 }
 
+.cobainn{
+  background: url('data:image/svg+xml,<svg width="475" height="77" viewBox="0 0 475 77" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z" fill="%2367C4CF"/><path d="M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z" fill="%231C9BAB"/></svg>');
+  background-repeat: no-repeat;
+  /* width: 500px; */
+  /* height: 50px; */
+  padding: 10px 40px;
+  color: #fff;
+  margin:0;
+  /* position: absolute; */
+}
+
+.cobainn2{
+  background: #1C9BAB;
+  background-repeat: no-repeat;
+  /* width: 500px; */
+  /* height: 50px; */
+  text-align:center;
+  padding: 10px 40px;
+  color: #fff;
+  margin:0;
+  /* position: absolute; */
+}
+
+
+.subteks{
+  background: url('data:image/svg+xml,<svg width="553" height="550" viewBox="0 0 553 550" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="22.4194" y="0.248047" width="529.801" height="529.801" fill="%231C9BAB"/><rect x="2.9707" y="21.9304" width="524.801" height="524.801" fill="white" stroke="%231C9BAB" stroke-width="5"/></svg>');
+  padding: 50px 50px 30px 30px;
+  width:60%;
+  float: left;
+  min-height: 300px;
+  text-align: justify;
+  border-bottom: 5px solid #1C9BAB;
+  margin: 20px;
+  background-size:     cover;
+    background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.subimg{
+  width:20%;
+  margin: 20px 50px;
+  float:right;
+}
+
 .baris{
   /* background: black; */
 }
@@ -150,6 +201,39 @@
   border-right: none;
 }
 
+.kotakbawah{
+  border: 7px solid #1C9BAB; 
+  background:white;
+  padding:40px;
+  text-align:justify
+}
+.kotakbawahbg{
+  padding: 50px 300px;
+}
+
+@media screen and (max-width: 992px) {
+
+.subteks{
+width:100%;
+min-height:0;
+margin: 10px 0;
+background: none;
+padding:0;
+border: none;
+}
+
+.subimg{
+  width: 100%;
+  float: left;
+  padding: 20%;
+  margin: 0;
+}
+
+.kotakbawahbg{
+    padding:0px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .kolom {
     width: 100%;
@@ -159,7 +243,25 @@
   .kolom:last-child{
     padding: 0px;
   }
+
+
+
+  /* .subteks{
+  width:100%;
+  margin: 10px 0;
+} */
 }
+
+/* @media screen and (max-width: 520px) {
+
+  .subteks{
+  width:100%;
+  margin: 10px 0;
+  background: none;
+  padding:0;
+  border: none;
+}
+} */
 
 .bg-andalus {
   --bs-bg-opacity: 1;
@@ -207,11 +309,13 @@
   height: 30vw;
   float: right;
 }
+
+
     </style>
   </head>
   <body id="page-top">
-        <!-- Navigation-->
-        @include('nav')
+    @include('nav')
+
     <!-- <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -305,140 +409,125 @@
                 </div>
             </div>
         </header>
-        <!-- Quote/testimonial aside-->
-        <!-- <aside class="text-center bg-gradient-primary-to-secondary">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
-                    </div>
-                </div>
-            </div>
-        </aside> -->
-        <!-- Basic features section-->
-        <section class="mastsec bg-sec-left">
+
+        <section class="mastsec">
             <div class="container px-2">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <!-- <div class="shape-one"></div>
-                  <p>Lollipop lollipop powder cookie chocolate bar macaroon topping
-        gingerbread sweet. Tiramisu tootsie roll toffee candy canes cake. Cookie
-        fruitcake dessert gummies cake bear claw lemon drops gummies. Jelly-o
-        muffin cupcake candy icing toffee jelly. Apple pie lollipop cake pastry
-        pie jelly-o. Bonbon powder gingerbread dessert dragée tiramisu. Candy
-        canes lemon drops sweet roll brownie muffin bear claw macaroon cake
-        jujubes. Pudding lollipop bonbon macaroon cupcake. Jujubes bonbon
-        croissant jujubes chupa chups. Gummies donut cake sweet apple pie
-        tiramisu sweet powder. Pudding soufflé bonbon muffin oat cake chocolate
-        cake croissant. Soufflé lollipop topping pie jelly beans biscuit toffee.
-        Lollipop shortbread shortbread topping tootsie roll jujubes cake bear
-        claw icing. Carrot cake cake oat cake cookie sesame snaps.</p> -->
+                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
+                  <h3 class="cobainn">
+                  MANASIKKU
+</h3>
+<div style="border: 7px solid #1C9BAB;">
+<div class="subteks">
+  <p>Manasikku merupakan aplikasi pembelajaran manasik haji berbasis virtual reality. Pada aplikasi manasikku diharapkan pembelajaran manasik haji juga dapat menampilkan interaksi langsung dengan prosesi haji maupun umrah yang disimulasikan oleh komputer. 
 
+Selain itu, terdapat fitur perlengkap lainnya pada aplikasi ini yaitu fitur terjemahan bahasa arab, kurs mata uang riyal dengan rupiah, serta fitur denah. Aplikasi manasikku saat ini dapat diakses secara gratis melalui google playstore.</p>
+<div class="text-center">
+<button class="btn btn-primary background-prim" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=com.manasikku.manasikku'">UNDUH MANASIKKU</button>
+</div>
+</div>
+<img class="subimg" src="{{ asset('img/manasikku.png') }}"/>
 
-                    <div class="col-12 col-lg-5 order-lg-0">
-                        <!-- <div class="shape-one"></div> -->
-                        <h2 class="display-4 lh-1 mb-4">Who We Are</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">PT Andalus Teknologi Indonesia merupakan perusahaan berbasis teknologi yang menyediakan pelayanan pada berbagai bidang dengan fokus pencapaian terhadap hasil yang berkualitas. Perusahaan ini didedikasikan sebagai perusahaan yang mampu memberikan solusi dan layanan teknologi terbaik kepada pelanggan. Antesia berkomitmen menjadi mitra terpercaya dalam merencanakan dan memberikan solusi teknologi terkini berdasarkan kebutuhan pelanggan.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-5 order-lg-1">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="{{ asset('img/img1.png') }}" alt="..." /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mastsec bg-sec-right text-lg-end">
-            <div class="container px-2">
-
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-
-                    <div class="col-12 col-lg-5 order-lg-1">
-                        <h2 class="display-6 lh-1 mb-4">Visi</h2>
-                        <p class="lead fw-semibold mb-5 mb-lg-0">Menjadi pusat teknologi yang unggul dalam berbagai bidang dengan mengharapkan rahmat dan ridho Allah ﷻ</p>
-                        <br/>
-                        <br/>
-                        <h2 class="display-6 lh-1 mb-4">Misi</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Mengembangkan perusahaan guna mewujudkan penggunaan teknologi sesuai dengan nilai nilai al quran dan hadist; Meniadakan transaksi yang mengandung Riba, Gharar dan Maysir di dalamnya; Memberikan solusi yang efektif kepada pelanggan dalam mengatasi berbagai permasalahan pada bidang teknologi.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-5 order-lg-0">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="{{ asset('img/img2.png') }}" alt="..." /></div>
-                    </div>
+</div>
                 </div>
             </div>
         </section>
 
         <section class="mastsec">
-          <div class="container px-2">
-            <div class="bg-section-right">
-              <h2 class="display-4 lh-1 mb-4">Who We Are</h2>
-              <p class="fw-normal mb-5 mb-lg-0">PT Andalus Teknologi Indonesia merupakan perusahaan berbasis teknologi yang menyediakan pelayanan pada berbagai bidang dengan fokus pencapaian terhadap hasil yang berkualitas. Perusahaan ini didedikasikan sebagai perusahaan yang mampu memberikan solusi dan layanan teknologi terbaik kepada pelanggan. Antesia berkomitmen menjadi mitra terpercaya dalam merencanakan dan memberikan solusi teknologi terkini berdasarkan kebutuhan pelanggan.</p>
+            <div class="container px-2">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
+                  <h3 class="cobainn">
+                    KOMMIKA
+                  </h3>
+                  <div style="border: 7px solid #1C9BAB;">
+                    <div class="subteks">
+                      <p>Kommika (Komik Matematika) merupakan media pembelajaran Matematika yang dikemas dalam bentuk komik interaktif dengan pendekatan kontekstual. Konten komik berisi materi pokok Bentuk Aljabar. Tersedia 6 cerita menarik dengan tokoh utamanya adalah kakak beradik, yang bernama Kommi dan Mika. Di setiap episode terdapat beberapa pertanyaan interaktif yang berkaitan dengan materi di dalam cerita. Aplikasi Kommika dapat diunduh secara gratis di google playstore.</p>
+                      <div class="text-center">
+                        <button class="btn btn-primary background-prim" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=id.moxspoy.komath'">UNDUH KOMMIKA</button>
+                      </div>
+                    </div>
+                    <img class="subimg" src="{{ asset('img/kommikass.png') }}"/>
+                  </div>
+                </div>
             </div>
-            <div class="bg-section-left">
-              <h2 class="display-4 lh-1 mb-4">Who We Are</h2>
-              <p class="fw-normal mb-5 mb-lg-0">PT Andalus Teknologi Indonesia merupakan perusahaan berbasis teknologi yang menyediakan pelayanan pada berbagai bidang dengan fokus pencapaian terhadap hasil yang berkualitas. Perusahaan ini didedikasikan sebagai perusahaan yang mampu memberikan solusi dan layanan teknologi terbaik kepada pelanggan. Antesia berkomitmen menjadi mitra terpercaya dalam merencanakan dan memberikan solusi teknologi terkini berdasarkan kebutuhan pelanggan.</p>
-            </div>
-          </div>
         </section>
-
-
 
         <section class="mastsec">
             <div class="container px-2">
-
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <h2 style="margin-bottom:50px; font-size:50px;font-family:Keania One">Nilai Perusahaan</h2>
-
-                <div class="baris">
-                  <div class="kolom">
-                      <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Andal</h2>
-                        <p class="fw-normal mb-lg-0">Kami akan menempatkan proyek Anda sebagai prioritas utama kami.  Dengan senang hati kami akan bertanggung jawab untuk menangani setiap proyek yang dipercayakan kepada kami dan memenuhi target yang ditentukan.</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Moral</h2>
-                        <p class="fw-normal mb-lg-0">Melayani dengan sepenuh hati, Memberikan pelayanan terbaik</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Arif</h2>
-                        <p class="fw-normal mb-lg-0">Dapat mengerti segala kebutuhan pelanggan</p>
-                        <br/>
-                  </div>
-                  <div class="vertical-line"></div>
-                  <div class="kolom">
-                  <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Netral</h2>
-                        <p class="fw-normal mb-lg-0">Berlaku adil dan tidak memihak</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Akuntabilitas</h2>
-                        <p class="fw-normal mb-lg-0">Bertanggung jawab kepada pihak-pihak yang berhubungan  terkait  kegiatan bisnis atau kinerja dalam menjalankan proyek</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Harmoni</h2>
-                        <p class="fw-normal mb-lg-0">Menjaga keseimbangan organisasi dengan bertumbuh dan berkembang bersama di dalam suasana kekeluargaan dan saling mendukung untuk kemajuan individual dan organisasi.</p>
-                    
-                  </div>
-                </div>
-
-                    <!-- <div class="col-sm-8 order-lg-2" style="flex: 0 0 auto;width: 47.66666667%;">        
-                      <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Netral</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Berlaku adil dan tidak memihak</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Akuntabilitas</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Bertanggung jawab kepada pihak-pihak yang berhubungan  terkait  kegiatan bisnis atau kinerja dalam menjalankan proyek</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Harmoni</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Menjaga keseimbangan organisasi dengan bertumbuh dan berkembang bersama di dalam suasana kekeluargaan dan saling mendukung untuk kemajuan individual dan organisasi.</p>
+                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
+                  <h3 class="cobainn">
+                    iABLE
+                  </h3>
+                  <div style="border: 7px solid #1C9BAB;">
+                    <div class="subteks">
+                      <p>iABLE merupakan aplikasi E-Counseling bagi Orangtua dan Intervensi Dini bagi Anak Berkebutuhan Khusus. Dengan memberikan fitur chat Konsultasi dan Intervensi serta Informasi tentang Anak Berkebutuhan Khusus secara Online, dimanapun dan kapanpun. Aplikasi iABLE dapat diakses secara gratis melalui google playstore.</p>
+                      <div class="text-center">
+                        <button class="btn btn-primary background-prim" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=com.iable.iable'">UNDUH iABLE</button>
+                      </div>
                     </div>
-                    <div class="col-sm-8 order-lg-0" style="flex: 0 0 auto;width: 47.66666667%;">
-                      <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Andal</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Kami akan menempatkan proyek Anda sebagai prioritas utama kami.  Dengan senang hati kami akan bertanggung jawab untuk menangani setiap proyek yang dipercayakan kepada kami dan memenuhi target yang ditentukan.</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Moral</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Melayani dengan sepenuh hati, Memberikan pelayanan terbaik</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Arif</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Dapat mengerti segala kebutuhan pelanggan</p>
-                    </div> -->
+                    <img class="subimg" src="{{ asset('img/iABLEss.png') }}"/>
+                  </div>
                 </div>
             </div>
         </section>
-
         
+
+        <section class="mastsec">
+            <div class="container px-2">
+              <div style="background:url('{{ asset('img/pipe.png') }}') no-repeat center;">
+              <div class="kotakbawahbg">
+                <div class="row gx-5 align-items-center">
+                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
+                  <h3 class="cobainn2">
+                    SEDOW
+                  </h3>
+                  <div class="kotakbawah">
+                  <p><b>Prototype Sedow (Setting Devit Of Water)</b> merupakan solusi Penampungan dan Pendistribusian Air Bersih Secara Merata kepada Warga yang Mengalami Bencana Kekeringan.</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="mastsec">
+            <div class="container px-2">
+              <div style="background:url('{{ asset('img/motor.png') }}') no-repeat center;">
+              <div class="kotakbawahbg">
+                <div class="row gx-5 align-items-center">
+                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
+                  <h3 class="cobainn2">
+                    SAFE JEK
+                  </h3>
+                  <div class="kotakbawah">
+                  <p><b>Safety Starting System (Safe Jek)</b> merupakan alat keamanan motor ekonomis dengan sistem pemasangan pada motor plug and play yang terdiri atas saklar pengaman ditambah tiga pilihan sistem keamanan motor yaitu dengan menggunakan ID Card, gantungan kunci, atau bluetooth yang terhubung dengan klakson dan juga lampu motor.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        
+        <section class="mastsec">
+            <div class="container px-2">
+              <div style="background:url('{{ asset('img/sipekabg.png') }}') no-repeat center;">
+              <div class="kotakbawahbg">
+                <div class="row gx-5 align-items-center">
+                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
+                  <h3 class="cobainn2">
+                    SIPEKA
+                  </h3>
+                  <div class="kotakbawah">
+                  <p><b>Sipeka (Sistem Pendeteksi Kadar Alkohol Berbasis Sensor Mq-3 dan Internet Of Things)</b> merupakan alat pendeteksi kadar alkohol berbasis sensor MQ-3 dan Internet of Things yang hasil pengukuran nya bisa diketahui dengan real time dengan langsung mengirimkannya ke internet atau dikenal dengan sebutan  Internet of Things (IoT).</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+
         <!-- Call to action section-->
         <!-- <section class="cta">
             <div class="cta-content">
