@@ -24,8 +24,8 @@
                         <li class="nav-item {{ request()->is('our-product') ? 'active' : ''}}">
                             <a class="nav-link me-lg-3" href="our-product">Our Product</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="#">Media & Partner</a>
+                        <li class="nav-item {{ request()->is('media-partner') ? 'active' : ''}}">
+                            <a class="nav-link me-lg-3" href="media-partner">Media & Partner</a>
                         </li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">

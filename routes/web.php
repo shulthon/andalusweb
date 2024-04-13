@@ -33,3 +33,10 @@ Route::get('/our-product', function () {
         "tes"=>"OK bos"
     ]);
 });
+
+Route::get('/media-partner', function () {
+    return view('media',[
+        "name"=>"Andalus",
+        "tes"=>"OK bos"
+    ]);
+});

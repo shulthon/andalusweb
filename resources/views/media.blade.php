@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <title>Our Product - Andalus</title>
+    <title>Media & Partner - Andalus</title>
     <style>
 
       .row{
@@ -126,13 +126,14 @@
   height:790;
 }
 
-.cobainn{
-  background: url('data:image/svg+xml,<svg width="475" height="77" viewBox="0 0 475 77" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z" fill="%2367C4CF"/><path d="M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z" fill="%231C9BAB"/></svg>');
-  background-repeat: no-repeat;
+.medpar{
+  /* background: url('data:image/svg+xml,<svg width="475" height="77" viewBox="0 0 475 77" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z" fill="%2367C4CF"/><path d="M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z" fill="%231C9BAB"/></svg>');
+  background-repeat: no-repeat; */
   /* width: 500px; */
   /* height: 50px; */
+  text-align:center;
   padding: 10px 40px;
-  color: #fff;
+  color: #1c9bab;
   margin:0;
   /* position: absolute; */
 }
@@ -245,7 +246,6 @@ border: none;
   }
 
 
-
   /* .subteks{
   width:100%;
   margin: 10px 0;
@@ -276,6 +276,7 @@ border: none;
   justify-content: center;
   position: relative;
 }
+
 
 @media (max-width: 991.98px) {
   .bg-sec-right{
@@ -368,22 +369,17 @@ border: none;
 
 
   </div> -->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container px-2">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
                             <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
-                            <!-- <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
-                            </div> -->
+
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -408,123 +404,168 @@ border: none;
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
+
+<style>
+  .fram { 
+    display: flex; 
+    flex-direction: row; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+} 
+  
+.fram-item { 
+    flex: 1; 
+    text-align: center; 
+    border: 10px solid #1c9bab;
+    margin:5px;
+} 
+  
+/* vertical menu styles */
+@media (max-width: 600px) { 
+    .fram { 
+       flex-direction: column; 
+    } 
+    .fram-item { 
+       flex: none; 
+       width: 100%; 
+    } 
+}
+  </style>
 
         <section class="mastsec">
             <div class="container px-2">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
-                  <h3 class="cobainn">
-                  MANASIKKU
-</h3>
-<div style="border: 7px solid #1C9BAB;">
-<div class="subteks">
-  <p>Manasikku merupakan aplikasi pembelajaran manasik haji berbasis virtual reality. Pada aplikasi manasikku diharapkan pembelajaran manasik haji juga dapat menampilkan interaksi langsung dengan prosesi haji maupun umrah yang disimulasikan oleh komputer. 
+                <div class="row gx-5 align-items-center">     
+                  <div style="height:100px"></div>
+                  <h3 class="medpar">
+                  <b>MEDIA & PARTNER</b>
+                  </h3>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <ul class="fram">
+                      <li class="fram-item">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritamanasikku.png') }}" alt="Berita Manasikku" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">MANASIKKU : Aplikasi Pembelajaran Manasik Haji Berbasis Virtual Reality</p>
+                        </div>                      
+</li>
+                      <li class="fram-item">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritakommika.png') }}" alt="Berita Komikka" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">KOMIKKA : Komik Matematika dan Fisika</p>
+                        </div>                      
+</li>
 
-Selain itu, terdapat fitur perlengkap lainnya pada aplikasi ini yaitu fitur terjemahan bahasa arab, kurs mata uang riyal dengan rupiah, serta fitur denah. Aplikasi manasikku saat ini dapat diakses secara gratis melalui google playstore.</p>
-<div class="text-center">
-<button class="btn btn-primary background-prim" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=com.manasikku.manasikku'">UNDUH MANASIKKU</button>
-</div>
-</div>
-<img class="subimg" src="{{ asset('img/manasikku.png') }}"/>
-
-</div>
+                      <li class="fram-item">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritasafejek.png') }}" alt="Berita Safe Jek" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">SAFEJEK : Safety Starting System Pada Motor Untuk Pengemudi GOJEK</p>
+                        </div>                      
+</li>
+</ul>
+<ul class="fram">
+<li class="fram-item">
+<div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritamq3.png') }}" alt="Berita MQ3" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">Sistem Pendeteksi Alkohol Berbasis Sensor MQ-3 dan Internet of Things</p>
+                        </div>   
+</li>
+<li class="fram-item" style="border: 10px solid #fff"></li>
+<li class="fram-item" style="border: 10px solid #fff"></li>
+</ul>
                 </div>
             </div>
         </section>
 
-        <section class="mastsec">
+
+
+        <!-- <section class="mastsec">
             <div class="container px-2">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
-                  <h3 class="cobainn">
-                    KOMMIKA
+                <div class="row gx-5 align-items-center">     
+                  <br/><br/><br/><br/><br/><br/><br/><br/>
+                  <h3 class="medpar">
+                  <b>MEDIA & PARTNER</b>
                   </h3>
-                  <div style="border: 7px solid #1C9BAB;">
-                    <div class="subteks">
-                      <p>Kommika (Komik Matematika) merupakan media pembelajaran Matematika yang dikemas dalam bentuk komik interaktif dengan pendekatan kontekstual. Konten komik berisi materi pokok Bentuk Aljabar. Tersedia 6 cerita menarik dengan tokoh utamanya adalah kakak beradik, yang bernama Kommi dan Mika. Di setiap episode terdapat beberapa pertanyaan interaktif yang berkaitan dengan materi di dalam cerita. Aplikasi Kommika dapat diunduh secara gratis di google playstore.</p>
-                      <div class="text-center">
-                        <button class="btn btn-primary background-prim" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=id.moxspoy.komath'">UNDUH KOMMIKA</button>
-                      </div>
-                    </div>
-                    <img class="subimg" src="{{ asset('img/kommikass.png') }}"/>
-                  </div>
+                  <br/>
+                  <br/>
+                  <table style="float:left">
+                    <tr style="text-align:center">
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritamanasikku.png') }}" alt="Berita Manasikku" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">MANASIKKU : Aplikasi Pembelajaran Manasik Haji Berbasis Virtual Reality</p>
+                        </div>                      
+                      </td>
+                      <td class="frambord"></td>
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritakommika.png') }}" alt="Berita Komikka" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">KOMIKKA : Komik Matematika dan Fisika</p>
+                        </div>                      
+                      </td>
+                      <td class="frambord"></td>
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritasafejek.png') }}" alt="Berita Safe Jek" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">SAFEJEK : Safety Starting System Pada Motor Untuk Pengemudi GOJEK</p>
+                        </div>                      
+                      </td>
+                    </tr>
+                    <tr style="height:40px;"></tr>
+                    <tr style="text-align:center">
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritamq3.png') }}" alt="Berita MQ3" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">Sistem Pendeteksi Alkohol Berbasis Sensor MQ-3 dan Internet of Things</p>
+                        </div>                      
+                      </td>
+                    </tr>
+                  </table>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="mastsec">
             <div class="container px-2">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
-                  <h3 class="cobainn">
-                    iABLE
+                <div class="row gx-5 align-items-center">     
+                  <br/><br/><br/><br/>
+                  <h3 class="medpar">
+                  <b>Kenapa Memilih Layanan Kami?</b>
                   </h3>
-                  <div style="border: 7px solid #1C9BAB;">
-                    <div class="subteks">
-                      <p>iABLE merupakan aplikasi E-Counseling bagi Orangtua dan Intervensi Dini bagi Anak Berkebutuhan Khusus. Dengan memberikan fitur chat Konsultasi dan Intervensi serta Informasi tentang Anak Berkebutuhan Khusus secara Online, dimanapun dan kapanpun. Aplikasi iABLE dapat diakses secara gratis melalui google playstore.</p>
-                      <div class="text-center">
-                        <button class="btn btn-primary background-prim" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=com.iable.iable'">UNDUH iABLE</button>
-                      </div>
-                    </div>
-                    <img class="subimg" src="{{ asset('img/iABLEss.png') }}"/>
-                  </div>
-                </div>
-            </div>
-        </section>
-        
+                  <br/>
+                  <br/>
 
-        <section class="mastsec">
-            <div class="container px-2">
-              <div style="background:url('{{ asset('img/pipe.png') }}') no-repeat center;">
-              <div class="kotakbawahbg">
-                <div class="row gx-5 align-items-center">
-                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
-                  <h3 class="cobainn2">
-                    SEDOW
-                  </h3>
-                  <div class="kotakbawah">
-                  <p><b>Prototype Sedow (Setting Devit Of Water)</b> merupakan solusi Penampungan dan Pendistribusian Air Bersih Secara Merata kepada Warga yang Mengalami Bencana Kekeringan.</p>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-        </section>
+                  <div style="width:800px; margin:0px auto; font-size:18px;">
 
-        <section class="mastsec">
-            <div class="container px-2">
-              <div style="background:url('{{ asset('img/motor.png') }}') no-repeat center;">
-              <div class="kotakbawahbg">
-                <div class="row gx-5 align-items-center">
-                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
-                  <h3 class="cobainn2">
-                    SAFE JEK
-                  </h3>
-                  <div class="kotakbawah">
-                  <p><b>Safety Starting System (Safe Jek)</b> merupakan alat keamanan motor ekonomis dengan sistem pemasangan pada motor plug and play yang terdiri atas saklar pengaman ditambah tiga pilihan sistem keamanan motor yaitu dengan menggunakan ID Card, gantungan kunci, atau bluetooth yang terhubung dengan klakson dan juga lampu motor.</p>
+                  <ol>
+
+                  <li>Memberikan produk dan layanan berkualitas untuk memberikan solusi terbaik bagi klien</li>
+                  <li>Menyesuaikan produk sesuai kebutuhan pasar dan pelanggan</li>
+                  <li>Harga yang kompetitif dan mampu bersaing</li>
+                  <li>Mendukung teknologi baru yang lebih update</li>
+                  <li>Kelengkapan layanan dan fasilitas</li>
+                  <li>Mengutamakan kualitas layanan</li>
+                  </ol>
                   </div>
                 </div>
-              </div>
-              </div>
-            </div>
-        </section>
-        
-        <section class="mastsec">
-            <div class="container px-2">
-              <div style="background:url('{{ asset('img/sipekabg.png') }}') no-repeat center;">
-              <div class="kotakbawahbg">
-                <div class="row gx-5 align-items-center">
-                  <!-- <div style="background:url('data:image/svg+xml,<svg width='475' height='77' viewBox='0 0 475 77' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z' fill='%2367C4CF'/><path d='M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z' fill='%231C9BAB'/></svg>')"> -->
-                  <h3 class="cobainn2">
-                    SIPEKA
-                  </h3>
-                  <div class="kotakbawah">
-                  <p><b>Sipeka (Sistem Pendeteksi Kadar Alkohol Berbasis Sensor MQ-3 dan Internet Of Things)</b> merupakan alat pendeteksi kadar alkohol berbasis sensor MQ-3 dan Internet of Things yang hasil pengukuran nya bisa diketahui dengan real time dengan langsung mengirimkannya ke internet atau dikenal dengan sebutan  Internet of Things (IoT).</p>
-                  </div>
-                </div>
-              </div>
-              </div>
             </div>
         </section>
 
