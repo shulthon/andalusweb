@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <title>Our Services - Andalus</title>
+    <title>Our Service - Andalus</title>
     <style>
 
       .row{
@@ -16,6 +16,13 @@
         /* margin-left:calc(-.5* var(--bs-gutter-x)); */
         margin-right:0 !important;
         margin-left:0 !important;
+      }
+
+      .background-prim{
+        background-color:#1C9BAB;
+      }
+      .background-prim:hover{
+        background-color:#115861;
       }
     .masthead {
   background-color: #d9d9d9;
@@ -119,6 +126,51 @@
   height:790;
 }
 
+.medpar{
+  /* background: url('data:image/svg+xml,<svg width="475" height="77" viewBox="0 0 475 77" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M474.081 76.1921H44.5967V0.77356H413.003L474.081 76.1921Z" fill="%2367C4CF"/><path d="M429.484 76.1921H0V0.77356H368.406L429.484 76.1921Z" fill="%231C9BAB"/></svg>');
+  background-repeat: no-repeat; */
+  /* width: 500px; */
+  /* height: 50px; */
+  text-align:center;
+  padding: 10px 40px;
+  color: #1c9bab;
+  margin:0;
+  /* position: absolute; */
+}
+
+.cobainn2{
+  background: #1C9BAB;
+  background-repeat: no-repeat;
+  /* width: 500px; */
+  /* height: 50px; */
+  text-align:center;
+  padding: 10px 40px;
+  color: #fff;
+  margin:0;
+  /* position: absolute; */
+}
+
+
+.subteks{
+  background: url('data:image/svg+xml,<svg width="553" height="550" viewBox="0 0 553 550" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="22.4194" y="0.248047" width="529.801" height="529.801" fill="%231C9BAB"/><rect x="2.9707" y="21.9304" width="524.801" height="524.801" fill="white" stroke="%231C9BAB" stroke-width="5"/></svg>');
+  padding: 50px 50px 30px 30px;
+  width:60%;
+  float: left;
+  min-height: 300px;
+  text-align: justify;
+  border-bottom: 5px solid #1C9BAB;
+  margin: 20px;
+  background-size:     cover;
+    background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.subimg{
+  width:20%;
+  margin: 20px 50px;
+  float:right;
+}
+
 .baris{
   /* background: black; */
 }
@@ -150,6 +202,39 @@
   border-right: none;
 }
 
+.kotakbawah{
+  border: 7px solid #1C9BAB; 
+  background:white;
+  padding:40px;
+  text-align:justify
+}
+.kotakbawahbg{
+  padding: 50px 300px;
+}
+
+@media screen and (max-width: 992px) {
+
+.subteks{
+width:100%;
+min-height:0;
+margin: 10px 0;
+background: none;
+padding:0;
+border: none;
+}
+
+.subimg{
+  width: 100%;
+  float: left;
+  padding: 20%;
+  margin: 0;
+}
+
+.kotakbawahbg{
+    padding:0px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .kolom {
     width: 100%;
@@ -159,7 +244,24 @@
   .kolom:last-child{
     padding: 0px;
   }
+
+
+  /* .subteks{
+  width:100%;
+  margin: 10px 0;
+} */
 }
+
+/* @media screen and (max-width: 520px) {
+
+  .subteks{
+  width:100%;
+  margin: 10px 0;
+  background: none;
+  padding:0;
+  border: none;
+}
+} */
 
 .bg-andalus {
   --bs-bg-opacity: 1;
@@ -167,13 +269,14 @@
 }
 
 .mastsec {
-  padding-top: 7%;
-  padding-bottom:7%;
+  padding-top: 60px;
+  padding-bottom:60px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+
 
 @media (max-width: 991.98px) {
   .bg-sec-right{
@@ -207,6 +310,8 @@
   height: 30vw;
   float: right;
 }
+
+
     </style>
   </head>
   <body id="page-top">
@@ -264,22 +369,17 @@
 
 
   </div> -->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container px-2">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
                             <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
-                            <!-- <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
-                            </div> -->
+
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -304,141 +404,426 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- Quote/testimonial aside-->
-        <!-- <aside class="text-center bg-gradient-primary-to-secondary">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
-                    </div>
-                </div>
-            </div>
-        </aside> -->
-        <!-- Basic features section-->
-        <section class="mastsec bg-sec-left">
+        </header> -->
+
+
+
+        <!-- <section class="mastsec">
             <div class="container px-2">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <!-- <div class="shape-one"></div>
-                  <p>Lollipop lollipop powder cookie chocolate bar macaroon topping
-        gingerbread sweet. Tiramisu tootsie roll toffee candy canes cake. Cookie
-        fruitcake dessert gummies cake bear claw lemon drops gummies. Jelly-o
-        muffin cupcake candy icing toffee jelly. Apple pie lollipop cake pastry
-        pie jelly-o. Bonbon powder gingerbread dessert dragée tiramisu. Candy
-        canes lemon drops sweet roll brownie muffin bear claw macaroon cake
-        jujubes. Pudding lollipop bonbon macaroon cupcake. Jujubes bonbon
-        croissant jujubes chupa chups. Gummies donut cake sweet apple pie
-        tiramisu sweet powder. Pudding soufflé bonbon muffin oat cake chocolate
-        cake croissant. Soufflé lollipop topping pie jelly beans biscuit toffee.
-        Lollipop shortbread shortbread topping tootsie roll jujubes cake bear
-        claw icing. Carrot cake cake oat cake cookie sesame snaps.</p> -->
-
-
-                    <div class="col-12 col-lg-5 order-lg-0">
-                        <!-- <div class="shape-one"></div> -->
-                        <h2 class="display-4 lh-1 mb-4">Who We Are</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">PT Andalus Teknologi Indonesia merupakan perusahaan berbasis teknologi yang menyediakan pelayanan pada berbagai bidang dengan fokus pencapaian terhadap hasil yang berkualitas. Perusahaan ini didedikasikan sebagai perusahaan yang mampu memberikan solusi dan layanan teknologi terbaik kepada pelanggan. Antesia berkomitmen menjadi mitra terpercaya dalam merencanakan dan memberikan solusi teknologi terkini berdasarkan kebutuhan pelanggan.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-5 order-lg-1">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="{{ asset('img/img1.png') }}" alt="..." /></div>
-                    </div>
+                <div class="row gx-5 align-items-center">     
+                  <br/><br/><br/><br/><br/><br/><br/><br/>
+                  <h3 class="medpar">
+                  <b>MEDIA & PARTNER</b>
+                  </h3>
+                  <br/>
+                  <br/>
+                  <table style="float:left">
+                    <tr style="text-align:center">
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritamanasikku.png') }}" alt="Berita Manasikku" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">MANASIKKU : Aplikasi Pembelajaran Manasik Haji Berbasis Virtual Reality</p>
+                        </div>                      
+                      </td>
+                      <td class="frambord"></td>
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritakommika.png') }}" alt="Berita Komikka" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">KOMIKKA : Komik Matematika dan Fisika</p>
+                        </div>                      
+                      </td>
+                      <td class="frambord"></td>
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritasafejek.png') }}" alt="Berita Safe Jek" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">SAFEJEK : Safety Starting System Pada Motor Untuk Pengemudi GOJEK</p>
+                        </div>                      
+                      </td>
+                    </tr>
+                    <tr style="height:40px;"></tr>
+                    <tr style="text-align:center">
+                      <td class="fram">
+                        <div style="padding:10px 30px;">
+                        <img src="{{ asset('img/beritamq3.png') }}" alt="Berita MQ3" style="width: 100%"/>
+                        <br/><br/>
+                        <p style="text-align:left;margin:0px;padding:0px;font-size:10px;">Apr 15, 2024</p>
+                        <p style="text-align:left; margin:0px;padding:0px;font-size:12px;font-weight:bold">Sistem Pendeteksi Alkohol Berbasis Sensor MQ-3 dan Internet of Things</p>
+                        </div>                      
+                      </td>
+                    </tr>
+                  </table>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="mastsec bg-sec-right text-lg-end">
-            <div class="container px-2">
+        <style>
+.column {
+  float: left;
+  width: 50%;
+}
 
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hideit{display: flex; align-items: center; justify-content: center;}
 
-                    <div class="col-12 col-lg-5 order-lg-1">
-                        <h2 class="display-6 lh-1 mb-4">Visi</h2>
-                        <p class="lead fw-semibold mb-5 mb-lg-0">Menjadi pusat teknologi yang unggul dalam berbagai bidang dengan mengharapkan rahmat dan ridho Allah ﷻ</p>
-                        <br/>
-                        <br/>
-                        <h2 class="display-6 lh-1 mb-4">Misi</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Mengembangkan perusahaan guna mewujudkan penggunaan teknologi sesuai dengan nilai nilai al quran dan hadist; Meniadakan transaksi yang mengandung Riba, Gharar dan Maysir di dalamnya; Memberikan solusi yang efektif kepada pelanggan dalam mengatasi berbagai permasalahan pada bidang teknologi.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-5 order-lg-0">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="{{ asset('img/img2.png') }}" alt="..." /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+@media screen and (max-width: 800px) {
+  .column {
+  float: left;
+  width: 100%;
+}
+.hideit{display:none}
+}
+          </style>
 
         <section class="mastsec">
-          <div class="container px-2">
-            <div class="bg-section-right">
-              <h2 class="display-4 lh-1 mb-4">Who We Are</h2>
-              <p class="fw-normal mb-5 mb-lg-0">PT Andalus Teknologi Indonesia merupakan perusahaan berbasis teknologi yang menyediakan pelayanan pada berbagai bidang dengan fokus pencapaian terhadap hasil yang berkualitas. Perusahaan ini didedikasikan sebagai perusahaan yang mampu memberikan solusi dan layanan teknologi terbaik kepada pelanggan. Antesia berkomitmen menjadi mitra terpercaya dalam merencanakan dan memberikan solusi teknologi terkini berdasarkan kebutuhan pelanggan.</p>
-            </div>
-            <div class="bg-section-left">
-              <h2 class="display-4 lh-1 mb-4">Who We Are</h2>
-              <p class="fw-normal mb-5 mb-lg-0">PT Andalus Teknologi Indonesia merupakan perusahaan berbasis teknologi yang menyediakan pelayanan pada berbagai bidang dengan fokus pencapaian terhadap hasil yang berkualitas. Perusahaan ini didedikasikan sebagai perusahaan yang mampu memberikan solusi dan layanan teknologi terbaik kepada pelanggan. Antesia berkomitmen menjadi mitra terpercaya dalam merencanakan dan memberikan solusi teknologi terkini berdasarkan kebutuhan pelanggan.</p>
-            </div>
-          </div>
-        </section>
-
-
-
-        <section class="mastsec">
             <div class="container px-2">
+                <div class="gx-5 align-items-center">     
+                  <div style="height:100px"></div>
+                  <h3 class="medpar">
+                  <b>PELAYANAN KAMI</b>
+                  </h3>
+                  <br/>
+                  <br/>
+                  <div class="row">
 
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <h2 style="margin-bottom:50px; font-size:50px;font-family:Keania One">Nilai Perusahaan</h2>
-
-                <div class="baris">
-                  <div class="kolom">
-                      <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Andal</h2>
-                        <p class="fw-normal mb-lg-0">Kami akan menempatkan proyek Anda sebagai prioritas utama kami.  Dengan senang hati kami akan bertanggung jawab untuk menangani setiap proyek yang dipercayakan kepada kami dan memenuhi target yang ditentukan.</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Moral</h2>
-                        <p class="fw-normal mb-lg-0">Melayani dengan sepenuh hati, Memberikan pelayanan terbaik</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Arif</h2>
-                        <p class="fw-normal mb-lg-0">Dapat mengerti segala kebutuhan pelanggan</p>
-                        <br/>
+                  <!-- <div style="width:800px; margin:0px auto; font-size:18px;"> -->
+                  <div class="column">
+                    <b style="font-size:18px">USER EXPERIENCE</b>
+                    <p>Kami memprioritaskan dalam menciptakan desain yang menarik dan pengalaman pengguna yang mulus untuk mendorong hasil optimal bagi bisnis Anda</p>
+                    <table>
+                      <tr>
+                        <td style="width:70px"><img src="{{ asset('img/uxres.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>UX Research</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/uxdes.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>UX Design</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/uxsur.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>UX Survey</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/uxus.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>Usability Testing</td>
+                      </tr>
+                    </table>
                   </div>
-                  <div class="vertical-line"></div>
-                  <div class="kolom">
-                  <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Netral</h2>
-                        <p class="fw-normal mb-lg-0">Berlaku adil dan tidak memihak</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Akuntabilitas</h2>
-                        <p class="fw-normal mb-lg-0">Bertanggung jawab kepada pihak-pihak yang berhubungan  terkait  kegiatan bisnis atau kinerja dalam menjalankan proyek</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Harmoni</h2>
-                        <p class="fw-normal mb-lg-0">Menjaga keseimbangan organisasi dengan bertumbuh dan berkembang bersama di dalam suasana kekeluargaan dan saling mendukung untuk kemajuan individual dan organisasi.</p>
+
+                  <div class="column hideit">
+                  <img src="{{ asset('img/ux.png') }}" style="margin:0 auto"/>
+                  </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <div class="row">
+                  <div class="column hideit">
+                  <img src="{{ asset('img/dev.png') }}" style="margin:0 auto"/>
+                  </div>
+                  <div class="column">
+                  <b style="font-size:18px">Development</b>
+                    <p>Pakar kami berspesialisasi dalam membangun situs web atau aplikasi seluler khusus di semua perangkat untuk mendukung bisnis Anda</p>
+                    <table>
+                      <tr>
+                        <td style="width:70px"><img src="{{ asset('img/devvis.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>Visual Design</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/devweb.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>Web Development</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/devmob.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>Mobile Apps</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/devecom.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>E-commerce</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/devcloud.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>Cloud Native Application</td>
+                      </tr>
+                      <tr>
+                        <td><img src="{{ asset('img/devmain.png') }}" style="margin:0 auto; width:50px"/></td>
+                        <td>Maintenance</td>
+                      </tr>
+                    </table>
                     
                   </div>
-                </div>
-
-                    <!-- <div class="col-sm-8 order-lg-2" style="flex: 0 0 auto;width: 47.66666667%;">        
-                      <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Netral</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Berlaku adil dan tidak memihak</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Akuntabilitas</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Bertanggung jawab kepada pihak-pihak yang berhubungan  terkait  kegiatan bisnis atau kinerja dalam menjalankan proyek</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Harmoni</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Menjaga keseimbangan organisasi dengan bertumbuh dan berkembang bersama di dalam suasana kekeluargaan dan saling mendukung untuk kemajuan individual dan organisasi.</p>
-                    </div>
-                    <div class="col-sm-8 order-lg-0" style="flex: 0 0 auto;width: 47.66666667%;">
-                      <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Andal</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Kami akan menempatkan proyek Anda sebagai prioritas utama kami.  Dengan senang hati kami akan bertanggung jawab untuk menangani setiap proyek yang dipercayakan kepada kami dan memenuhi target yang ditentukan.</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Moral</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Melayani dengan sepenuh hati, Memberikan pelayanan terbaik</p>
-                        <br/>
-                        <h2 class="lh-1 mb-4" style="font-size: calc(1rem + 1vw);background:url('{{ asset('img/bg_point.svg') }}');background-repeat: no-repeat; color:white; padding:10px;">Arif</h2>
-                        <p class="fw-normal mb-5 mb-lg-0">Dapat mengerti segala kebutuhan pelanggan</p>
-                    </div> -->
+                  </div>
+                  <!-- </div> -->
                 </div>
             </div>
         </section>
 
-        
+
+        <section class="mastsec" style="background:#1c9bab; color:#fff">
+            <div class="container px-2">
+                <div class="gx-5 align-items-center">  
+                  <div class="row">
+                    <div class="column">
+                      <h4><i>SMARTHOME</i></h4>
+                      <p style="text-align:justify">Merupakan sebuah konsep rumah modern yang mengadopsi teknologi canggih untuk meningkatkan kualitas hidup penghuninya. Smart home system memungkinkan pengguna untuk mengontrol fungsi seperti akses keamanan ke rumah, suhu, pencahayaan, dan home theater dari jarak jauh.</p>
+                      <div style="height:50px"></div>
+                      <h4>Kelebihan Smarthome</h4>
+                      <table>
+                      <tr>
+                        <td style="width:60px; padding-bottom:7px;"><img src="{{ asset('img/sh1.png') }}" style="margin:0 auto"/></td>
+                        <td>Menikmati kenyamanan tingkat tinggi</td>
+                      </tr>
+                      <tr>
+                        <td style="width:60px; padding-bottom:7px;"><img src="{{ asset('img/sh2.png') }}" style="margin:0 auto"/></td>
+                        <td>Meningkatkan efisiensi kerja</td>
+                      </tr>
+                      <tr>
+                        <td style="width:60px; padding-bottom:7px;"><img src="{{ asset('img/sh3.png') }}" style="margin:0 auto"/></td>
+                        <td>Menghemat energi</td>
+                      </tr>
+                      <tr>
+                        <td style="width:60px; padding-bottom:7px;"><img src="{{ asset('img/sh4.png') }}" style="margin:0 auto"/></td>
+                        <td>Mempermudah keseharian</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="column hideit"><img src="{{ asset('img/smarthome.png') }}" alt="Andalus Smarthome" style="height:320px; margin:0 auto"/>
+                  </div>
+</div>   
+                  <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        <style>
+                    .colleft {
+                      float: left;
+                      width: 20%;
+                    }
+                    .colright {
+                      float: left;
+                      width: 80%;
+                    }
+
+                    /* Clear floats after the columns */
+                    .roww:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+
+                    .colleft1 {
+                      float: left;
+                      width: 60%;
+                    }
+                    .colright1 {
+                      float: right;
+                      width: 40%;
+                    }
+
+                    /* Clear floats after the columns */
+                    .roww:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+
+                    @media screen and (max-width: 800px) {
+                    .colleft{
+                      display:none;
+                    }
+                    .colright , .colleft1{
+                      width:100%;
+                      align-items: center; justify-content: center;
+                      padding:10px;
+                      margin:0;
+                    }
+                    }
+
+                  </style>
+
+        <section class="mastsec">
+            <div class="container px-2">
+                <div class="gx-5 align-items-center">  
+                  <div style="background:#1c9bab; color:#fff; padding: 25px;">
+                    <h4><i>MARKET RESEARCH</i></h4>
+                  </div>
+                  <div class="roww">
+                    <div class="colleft">
+                      <div style="padding:30px;">
+                      <img src="{{ asset('img/marres.png') }}" alt="Market Research"/>
+                      </div>
+                    </div>
+                    <div class="colright">
+                      <div style="padding:30px; text-align:justify">
+                      <p>Sebuah proses yang perlu Anda lakukan sebelum memulai bisnis maupun usaha. Hal ini bertujuan untuk memperoleh data yang objektif dan akurat untuk selanjutnya dapat dijadikan acuan dalam membuat keputusan. Kami memanfaatkan penelitian untuk membuka ide-ide baru, mengembangkan strategi masa depan, dan mendorong pertumbuhan bisnis Anda.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="height:30px;"></div>
+
+                  <div style="background:#1c9bab; color:#fff; padding: 25px;">
+                    <h4><i>CONCEPT TESTING</i></h4>
+                  </div>
+                  <div class="roww">
+                    <div class="colleft">
+                      <div style="padding:30px; text-align:justify">
+                      <img src="{{ asset('img/contes.png') }}" alt="Market Research"/>
+                      </div>
+                    </div>
+                    <div class="colright">
+                      <div style="padding:30px; text-align:justify">
+                      <p>Kami akan membantu Anda untuk mengembangkan daftar konsep yang layak untuk dibawa ke tahap pengembangan produk selanjutnya. Dengan menggunakan serangkaian teknik kualitatif dan kuantitatif, kami akan membantu Anda memahami pandangan konsumen terhadap berbagai konsep, mengeksplorasi apakah proposisi produk, masalah yang ingin Anda pecahkan, dan alasan yang diyakini sesuai dengan target Anda.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="height:30px;"></div>
+
+                  <div style="background:#1c9bab; color:#fff; padding: 25px;">
+                    <h4><i>PRICING RESEARCH</i></h4>
+                  </div>
+                  <div class="roww">
+                    <div class="colleft">
+                      <div style="padding:30px;">
+                      <img src="{{ asset('img/prires.png') }}" alt="Market Research"/>
+                      </div>
+                    </div>
+                    <div class="colright">
+                      <div style="padding:30px; text-align:justify">
+                      <p>Menemukan titik harga optimal untuk produk atau layanan Anda. Sulit untuk menentukan nilai yang diberikan konsumen terhadap produk atau layanan baru. Dengan riset harga, kami dapat membantu Anda untuk menyempurnakan strategi harga yang optimal.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="height:30px;"></div>
+
+                  <div style="background:#1c9bab; color:#fff; padding: 25px;">
+                    <h4><i>SEGMENTATION RESEARCH</i></h4>
+                  </div>
+                  <div class="roww">
+                    <div class="colleft">
+                      <div style="padding:30px; text-align:justify">
+                      <img src="{{ asset('img/segres.png') }}" alt="Market Research"/>
+                      </div>
+                    </div>
+                    <div class="colright">
+                      <div style="padding:30px; text-align:justify">
+                      <p>Perlunya menentukan di mana harus memfokuskan upaya Anda untuk mendapatkan hasil maksimal. Segmentasi kami dirancang untuk membantu Anda memahami pengelompokan berbeda yang membentuk pasar, sehingga Anda dapat fokus pada pengelompokan yang menawarkan potensi paling besar.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="height:30px;"></div>
+
+                  <div style="background:#1c9bab; color:#fff; padding: 25px;">
+                    <h4><i>UNDERSTANDING CUSTOMER BEHAVIOR</i></h4>
+                  </div>
+                  <div class="roww">
+                    <div class="colleft">
+                      <div style="padding:30px; text-align:justify">
+                      <img src="{{ asset('img/under.png') }}" alt="Market Research"/>
+                      </div>
+                    </div>
+                    <div class="colright">
+                      <div style="padding:30px; text-align:justify">
+                      <p>Sangat penting bagi Anda untuk memahami dan merespons kebutuhan pelanggan yang terus berkembang agar tetap relevan dan menjadi yang terdepan dalam persaingan. Kami mengidentifikasi tren utama pasar dan memantau aktivitas pesaing hingga menilai potensi ancaman dan peluang pasar, analisis pasar kami akan membekali Anda dengan informasi yang Anda perlukan untuk menavigasi pasar Anda.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mastsec" style="background:#1c9bab; color:#fff">
+            <div class="container px-2">
+                <div class="gx-5 align-items-center">  
+                  <div style="margin-bottom:50px; text-align:center;">
+                <h4><i>FASILITATOR EKSTRAKURIKULER ROBOTIK</i></h4>
+                  </div>
+                  <div class="row">
+                  <div class="column hideit"><img src="{{ asset('img/fasil.png') }}" alt="Andalus Smarthome" style="height:300px; margin:0 auto"/>
+                  </div>
+
+                  <div class="column">
+                      <p style="text-align:justify;">Siswa-siswi akan belajar robotik dengan kurikulum dan activity materials yang khusus dibuat untuk keperluan edukasi robotik. Dalam kegiatan ini siswa diajak belajar robotik secara alami melalui aktifitas praktik mengenai desain, konstruksi, tingkah laku robot, sistem kontrol, sensor, pemrograman robot, dan lain-lain. Sehingga, siswa-siswi sekolah dapat mengenal dan menguasai teknologi robotik dan mampu membuat berbagai inovasi kreatif dengan memanfaatkan skill teknologi yang telah dikuasainya.</p>
+                      
+                  </div>
+</div>   
+                  <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="mastsec">
+            <div class="container px-2">
+                <div class="gx-5 align-items-center">  
+                  <div style="margin-bottom:50px; text-align:center;">
+                <h4><i>FASILITATOR OSN</i></h4>
+                  </div>
+                  <div class="row">
+
+                  <div class="colleft1">
+                      <p style="text-align:justify;">Olimpiade Sains Nasional atau akrab disebut dengan OSN, adalah agenda bertaraf nasional yang diikuti oleh para peserta dari berbagai jenjang (SD, SMP dan SMA) untuk berkompetisi memperebutkan gelar juara olimpiade. Masing-masing peserta dari Olimpiade Sains Nasional telah melalui proses seleksi terlebih dahulu pada tingkat Kabupaten dan Provinsi. Gelaran Olimpiade Sains Nasional di Indonesia hanya diadakan selama satu tahun sekali. Peserta yang menjadi juara dalam ajang bergengsi nasional ini bisa berlanjut ke Olimpiade Internasional untuk bersaing dengan pelajar dari negara lain, tak heran bila pada fase ini peserta harus mendapatkan bimbingan khusus.</p>                      
+                  </div>
+                  <div class="colright1 hideit"><img src="{{ asset('img/osn.png') }}" alt="Andalus OSN" style="height:250px;"/>
+                  </div>
+</div>
+<div style="height:50px"></div>   
+<style>
+  ul.new {
+  width: 100%;
+  /* list-style-position: outside; */
+  /* text-align: left; */
+  /* border: 2px solid #222222; */
+  /* padding: 0; */
+}
+
+ul.new li {
+  width:16%;
+  float:left;
+  /* padding: 0.5em 1em; */
+  /* border: 2px solid #222222; */
+  /* margin: 5px 0; */
+}
+
+@media screen and (max-width: 800px) {
+ul.new li{
+  width:50%;
+}
+}
+  </style>
+                  <ul class="new">
+                    <li>Matematika</li>
+                    <li>Fisika</li>
+                    <li>Kimia</li>
+                    <li>Biologi</li>
+                    <li>Ekonomi</li>
+                    <li>Astronomi</li>
+                    <li>IPA</li>
+                    <li>IPS</li>
+                    <li>Geografi</li>
+                    <li>Komputer</li>
+                    <li>Kebumian</li>
+                  </ul>
+                  <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
         <!-- Call to action section-->
         <!-- <section class="cta">
             <div class="cta-content">
